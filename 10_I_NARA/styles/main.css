@@ -43,4 +43,126 @@ header .right .all_nav span {
 }
 header .right .all_nav span:nth-child(2) {
   margin: 5px 0;
+}
+main {
+  position: relative;
+}
+main .visual {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+main .visual .contents {
+  color: #fff;
+  width: 100%;
+  padding-top: 300px;
+  position: relative;
+  z-index: 110;
+  text-align: center;
+}
+main .visual .contents h1 {
+  line-height: 1.5;
+  font-family: "Jua", sans-serif;
+  font-size: 3rem;
+}
+main .visual .contents p {
+  line-height: 1.5;
+  padding-bottom: 70px;
+}
+main .visual .contents a {
+  font-family: "Jua", sans-serif;
+  font-size: 1.5rem;
+  padding: 20px 90px;
+  background: #fff;
+  border-radius: 50px;
+}
+main .visual video {
+  transform: translate(-50%, 0);
+  width: 130%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 0;
+}
+main .visual .page_down {
+  position: absolute;
+  z-index: 110;
+  width: 100%;
+  left: 0;
+  bottom: 100px;
+  text-align: center;
+}
+main .visual::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 105;
+}
+main .event_wrap {
+  padding: 80px 0;
+  width: 1100px;
+  margin: 0 auto;
+}
+main .event_wrap h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Jua", sans-serif;
+}
+main .event_wrap .more {
+  font-family: "Jua", sans-serif;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+main .event_wrap .slide_wrap {
+  margin-top: 80px;
+}
+main .event_wrap .slide_wrap .slide_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 320px;
+  grid-template-areas: "s1 s2 s3";
+}
+main .event_wrap .slide_wrap .slide_container .slide {
+  padding: 30px;
+  position: relative;
+  background: center;
+  border-radius: 20px;
+}
+main .event_wrap .slide_wrap .slide_container .slide h1 {
+  font-size: 1.5rem;
+  font-family: "Jua", sans-serif;
+  line-height: 1.4;
+}
+main .event_wrap .slide_wrap .slide_container .slide a {
+  position: absolute;
+  bottom: 10%;
+}
+main .event_wrap .slide_wrap .slide_container .slide1 {
+  background: #ffe552 url(../images/event_image_0_20221028085348_35465.png);
+  grid-area: s1;
+  background-size: 90%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+main .event_wrap .slide_wrap .slide_container .slide2 {
+  margin: 0 5px;
+  background: #b2e9de url(../images/event_image_0_20221028085704_61822.png);
+  grid-area: s2;
+  background-size: 90%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+main .event_wrap .slide_wrap .slide_container .slide3 {
+  background: #ffcfd8 url(../images/event_image_3_20221105015010_49282.png);
+  grid-area: s3;
+  background-size: 90%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */
