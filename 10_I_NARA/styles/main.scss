@@ -102,6 +102,7 @@ main {
                 grid-template-rows:320px;
                 grid-template-areas:'s1 s2 s3';
                 .slide {
+                    margin:0 5px;
                     padding: 30px;
                     position:relative;
                     background: center;
@@ -138,5 +139,87 @@ main {
                 }
             }
         }
+    #intro_wrap {
+        padding:80px 0;
+        width:1100px;
+        margin:0 auto;
+        h1 {font-size:3rem; line-height:1.5; font-family: $font-jua;}
+        p {margin-top:10px;}
+        .more {
+            margin-top:20px;
+            font-family: $font-jua;
+            padding-top:10px;
+            display:flex;
+            flex-flow:row nowrap;
+            align-items: center;
+            img {}
+        }
+        .slide_wrap {
+            margin-top:80px;
+            .slide_container {
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: 300px;
+                grid-template-areas:'s1 s2 s3 s4 s5' ;
+                .slide {
+                    position:relative;
+                    margin:0 10px;
+                    border-radius:20px;
+                    .play {
+                        position:absolute;
+                        top:40%; left:50%;
+                    }
+                }
+                .slide1 {
+                    grid-area: s1;
+                    background: url(../images/thumbnail_image_1_20221104060651_67302.jpeg)center;
+                    background-size: cover;
+                    p {}
+                    .play {
+                        img {}
+                    }
+                }
+                .slide2 {
+                    grid-area: s2;
+                    background: url(../images/thumbnail_image_2_20221104060915_64092.jpeg)center;
+                    background-size: cover;
+                    p {}
+                    .play {
+                        img {}
+                    }
+                }
+                .slide3 {
+                    grid-area: s3;
+                    background: url(../images/thumbnail_image_3_20221104060928_38608.jpeg)center;
+                    background-size: cover;
+                    p {}
+                    .play {
+                        img {}
+                    }
+                }
+                .slide4 {
+                    grid-area: s4;
+                    background: url(../images/thumbnail_image_4_20221104060946_71750.jpeg)center;
+                    background-size: cover;
+                    p {}
+                    .play {
+                        img {}
+                    }
+                }
+                .slide5 {
+                    grid-area: s5;
+                    background: url(../images/thumbnail_image_5_20221104060955_15559.jpeg)center;
+                    background-size: cover;
+                    p {}
+                    .play {
+                        img {}
+                    }
+                }
+            }
+        }
+    }
     }//e:event_wrap
 //e:main
+
+
+
